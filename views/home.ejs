@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogChain</title>
+    <%-include('partials/style')%>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+           <span id="logo"> Blogchain </span>
+        </div>
+
+        <div class="nav_child" id="credentials_container">
+            <ul id="credential_list">
+                <li class="credentials" id="login"> <a href="/login" class="cred_links">Login</a> </li>
+                <li class="credentials" id="signin"><a href="/signin" class="cred_links">Sign up</a></li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <main class="children" id="main_content">
+
+        <div class="content_holder" id="top_section" >
+            <div id="moto" class="moto_c">
+                <span class="blogging">Blog</span> on <br> <span class="blockchain">Blockchain</span>
+            </div>
+            <div id="img_holder" class="moto_c">
+                <img src="2125457.png" alt="" id="blog_img" class="img_home">
+            </div>
+        </div>
+
+        <div class="content_holder" id="mid_section">
+            <div class="mid_c" id="opening">
+                Welcome to BlogChain, a blogging website which stores your blogs on blockchain. <br>Here we explore the fascinating world of blockchain technology and its ever-evolving impact on industries worldwide .<br>We store all your posts in a decentralized system, freeing you from cencorship and centralization.
+            </div>
+
+            <div class="mid_c" id="why_b">
+                <div class="b_c" id="why">
+                    Blogging on blockchain?
+                </div>
+                <div class="b_c" id="ans">
+                        Blogging has been around the internet even before mySpace and facebook!! <br> <br> In the earlier days of internet people use to write blogs to share their their views about things that interested them and share their experience with other  people on the internet. <br> <br> Today the need for censorship and big tech companies controlling it, the internet has become a centralized product. solution? <span id="blo">Blockchain</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="content_holder" id="bot_section">
+            <div class="bot-0">
+                <a href="/signin" class="li_1">Create an account</a>  and start typing💻!!!
+            </div>
+        </div>
+    </main>
+
+    <footer id="foot" class="children">
+        <div class="f_c" id="compy">
+            © 2023 Blogchain
+        </div>
+        <div class="f_c" id="log_c">
+            <div class="logo_p">
+                <img src="T.png" alt="" class="lo_i">
+            </div>
+
+            <div class="logo_p">
+                <img src="I.png" alt="" class="lo_i">
+            </div>
+
+            <div class="logo_p">
+                <img src="F.png" alt="" class="lo_i">
+            </div>
+        </div>
+    </footer>
+    <script src="/js/jquery.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+    <script src="/js/blog.js">
+</script>
+</body>
+</html>

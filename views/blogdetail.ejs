@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+    <title>shopping main</title>
+    <%-include('partials/style')%>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+            <span id="logo"> BlogChain </span>
+         </div>
+
+
+        <div id="user_info_container" class="nav_child">
+            <d class="info_img" id="user_img"><%=block.data.writer%></d>
+        </div>
+    </nav>
+    <main class="children" id="main_content">
+        <div class="content_holder" id="mid_section">
+            <div class="container-lg" id="polk">
+                <div class="oop">
+                    <p  class="h5">Block hash</p>
+                    <p class="block_info text-break "><%=block.hash%></p>
+
+                    <p  class="h5">Previous hash</p>
+                    <p class="block_info text-break"><%=block.prevHash%></p>
+
+                    <p  class="h5">Block Timestamp</p>
+                    <p class="block_info text-break"><%=block.timestamp%></p>
+
+                    <p  class="h5">Block nonce</p>
+                    <p class="block_info text-break"><%=block.nonce%></p>
+
+                    <p  class="h5">Mining Difficulty</p>
+                    <p class="block_info text-break"><%=block.difficulty%></p>
+
+                    <p  class="h5">Block Data</p>
+                    <div class="block_info hulo">
+                        <p  class="h6">Blog hashid</p>
+                        <p class="block_info text-break"><%=block.data.hashid%></p>
+
+                        <p  class="h6">Blog writer</p>
+                        <p class="block_info text-break"><%=block.data.writer%></p>
+                        
+                        <p  class="h6">Blog title</p>
+                        <p class="block_info text-break"><%=block.data.title%></p>
+
+                        <p  class="h6">Blog content</p>
+                        <p class="block_info text-break"><%=block.data.blog%></p>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/blog.js"></script>
+<script src="/js/profile.js"></script>
+</body>
+</html>

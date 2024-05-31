@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+    <title>shopping main</title>
+    <%-include('partials/style')%>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+            <span id="logo"> BlogChain </span>
+         </div>
+
+
+        <div id="user_info_container" class="nav_child">
+            <d class="info_img" id="user_img"><%=u.username%></d>
+        </div>
+    </nav>
+
+<main class="children" id="main_content">
+
+
+    <div class="content_holder" id="mid_section">
+      <div class="container-lg" id="lop">
+        <p class="fw-bolder fs-1">Add new data</p>
+
+        <form action="/"  method="post" class="">
+          <div class="input-group">
+            <span class="badge text-bg-primary mb-3 fs-6">writer and title</span>
+            <input type="text" aria-label="writer" class="form-control mb-3 mx-2" name="writer">
+            <input type="text" aria-label="title" class="form-control mb-3 mx-2" name="title">
+          </div>
+
+            <div class="input-group input-group-sm mb-3">
+                <textarea name="blog" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-sm" id="dataIn" cols="30" rows="10">
+                </textarea>
+            </div>
+
+            <button type="submit" class="btn btn-outline-primary btn-lg">Add new data</button>
+        </form>
+      </div>   
+     </div>
+    <div class="content_holder" id="bot_section">
+
+    </div>
+</main>
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/blog.js"></script>
+<script src="/js/profile.js"></script>
+</body>
+</html>

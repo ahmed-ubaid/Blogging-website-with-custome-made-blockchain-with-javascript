@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="shopping.css">
+    <title>shopping</title>
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+           <span id="logo"> LoGo </span>
+        </div>
+
+        <div class="nav_child" id="nav_option">
+            <ul id="nav_option_list" >
+                <li class="nav_option_list_item">home</li>
+                <li class="nav_option_list_item">shopping cart</li>
+                <li class="nav_option_list_item" id="categories">
+                    categories
+                    <div  class="drop_down_container">
+                        <ul id="drop_down">
+                            <li class="drop_down_options">Clothing</li>
+                            <li class="drop_down_options">Groceries</li>
+                            <li class="drop_down_options">Electronis</li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+
+        </div>
+
+        <!-- <div class="nav_child" id="credentials_container">
+            <ul id="credential_list">
+                <li class="credentials" id="login">login</li>
+                <li class="credentials" id="signin">signin</li>
+            </ul>
+        </div> -->
+
+        <div id="user_info_container" class="nav_child">
+            <img src="Black.png" alt="" class="info_img" id="user_img">
+            <div class="info_item disappear_profile" id="user_details">
+                <div id="info_item_details">
+                    <img src="Black.png" alt="" id="user_img2" class="info_img">
+                    <span id="user_name">ubaid</span>
+                </div>
+                <ul id="info_item_list">
+                    <li class="info_list_item">History</li>
+                    <li class="info_list_item">Cart</li>
+                    <li class="info_list_item">Profile</li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="childre" id="main_content">
+        <div class="content_holder" id="top_section">
+            <img src="coverpage3.jpg" alt="" id="top_section_img">
+        </div>
+        
+        <div class="content_holder" id="mid_section">
+            <div class="product_display">
+                <h3 class="display_name">Clothing</h3>
+                <ul class="item_container">
+                    <li class="product">
+                        <img src="coverpage3.jpg" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                    <li class="product">
+                        <img src="coverpage.jpg" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                </ul>
+            </div>
+           
+            <div class="product_display">
+                <h3 class="display_name">Electronics</h3>
+                <ul class="item_container">
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="product_display">
+                <h3 class="display_name">Groceries</h3>
+                <ul class="item_container">
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                    <li class="product">
+                        <img src="" alt="" class="product_img">
+                        <div class="product_name"></div>
+                        <div class="product_price"></div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="content_holder" id="bot_section"></div>
+    </main>
+
+
+    <script src="shopping.js"></script>
+</body>
+</html>

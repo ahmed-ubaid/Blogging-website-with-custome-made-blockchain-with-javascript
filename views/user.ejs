@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2&display=swap" rel="stylesheet">
+
+    <title>shopping main</title>
+    <%-include('partials/style')%>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/card.css">
+</head>
+<body>
+    <nav class="children" id="nav_bar">
+        <div class="nav_child" id="logo_container">
+            <span id="logo"> BlogChain </span>
+         </div>
+
+
+        <div id="user_info_container" class="nav_child">
+            <d class="info_img" id="user_img"><%=user.username%></d>
+        </div>
+    </nav>
+    <main class="children" id="main_content">
+        <div class="content_holder" id="mid_section">
+            <a href="/add" id="toadd">
+                <div class="container-lg" id="lop1">
+                    <div id="symbol">&plus;</div>
+                    <div id="tat">add new post</div>
+                </div>
+            </a>  
+        </div>
+        
+         <div class="content_holder" id="bot_section">
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+            <% for(post of user.posts){ %>
+                <a href="/blog/<%=post.time%>" class="link-secondary link-underline-opacity-0   nini">
+                    <div class="col overflow-y-auto ikop">
+                        <div class="card poki ">
+                          <div class="card-body liko">
+                            <h5 class="card-title"><%=post.title%></h5>
+                            <p class="card-text"><%=post.blog%></p>
+                          </div>
+                        </div>
+                      </div>
+                </a>
+            <% } %>
+              </div>
+        </div>
+    </main>
+
+<script src="/js/jquery.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/blog.js"></script>
+<script src="/js/profile.js"></script>
+</body>
+</html>
+    
